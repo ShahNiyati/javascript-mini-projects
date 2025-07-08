@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <form id="form">
+            <table>
+                <div id="heading">
+                    <h1>Product Details</h1>
+                </div>
+                <tbody>
+                    <tr>
+                        <th>Product ID<span>*</span></th>
+                        <td><input type="text" name="pid" id="pid"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Product Name<span>*</span></th>
+                        <td><input type="text" name="pname" id="pname"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Category<span>*</span></th>
+                        <td><input type="text" name="category" id="category"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Brand<span>*</span></th>
+                        <td><input type="text" name="brand" id="brand"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Price<span>*</span></th>
+                        <td><input type="text" name="price" id="price"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Quantity<span>*</span></th>
+                        <td><input type="text" name="quantity" id="quantity"><br>
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Discount(%) </th>
+                        <td><input type="text" name="discount" id="discount">
+                        <p class="validation"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Manufacture Date<span>*</span> </th>
+                        <td><input type="date" name="mdate" id="mdate"><br>
+                        <p class="validation"></p>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Expiry Date <span>*</span></th>
+                        <td><input type="date" name="edate" id="edate"><br>
+                        <p class="validation"></p>      
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Color </th>
+                        <td><input type="text" name="pcolor" id="pcolor" style="width:89%;">
+                            <button id="addbtn" type="button">ADD</button>
+                            <div id="colorList"></div> 
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Image</th>
+                        <td><input type="url" name="url" id="url" placeholder="Enter URL of image."></td>
+                    </tr>
+                    <tr>
+                        <th>Availability Status<span>*</span></th>
+                        <td>
+                            <select id="availability" name="availability">
+                                <option value="in-stock">In Stock</option>
+                                <option value="out-of-stock">Out of Stock</option>
+                                <option value="pre-order">Pre-Order</option>
+                            </select>
+                            <p class="validation"></p>      
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Rating </th>
+                        <td>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Description </th>
+                        <td><textarea id="desc"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+            <button id="resetbtn" >Reset</button>
+            <button id="submitbtn" >Submit</button>
+    </center>
+    
+        <!--new product table -->
+        <div class="msg-container hidecontent">
+            <p></p>
+            <center>
+                <h1 id="heading2">Products</h1>
+                <table id="show">
+                    <thead>
+                        <th>Id</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Brand</th>
+                        <th>Price </th>
+                        <th>Quantity</th>
+                        <th>Discount</th>
+                        <th>M_Date</th>
+                        <th>Exp_Date</th>
+                        <th>Color</th>
+                        <th>Status</th>
+                        <th>Rating</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody id="content">
+                 </tbody>
+            </table>
+    </center>        
+            <button id="moreDetail"> Add More </button>
+        </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

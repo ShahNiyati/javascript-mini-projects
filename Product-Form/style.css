@@ -1,0 +1,110 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #A8DADC;
+}
+table {
+    background-color: #F1FAEE;
+    border-collapse: collapse; /* Removes double borders */
+    width: 50%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border : 1px solid black; /*Single outer border */
+}
+th, td {
+  /* background-color : #CDEAE5 */
+  font-size : 21px;
+  border: 1px solid black; /* Single line between cells */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  width: 30%;
+  background-color: #F1FAEE; /* Optional: light background for headers */
+}
+input, select, textarea {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+#heading h1{
+    margin-top: 50px;
+    height:43px;
+    width : 50%;
+    color:white;
+    background-color: #457B9D;
+    border:none;
+    text-align : center;
+}
+#submitbtn,#resetbtn{
+  height:50px;
+  width: 25%;    
+  padding :10px;
+  font-size:21px;
+  color:white;
+  background-color: #457B9D;
+  border:none;
+  border-radius:10px;
+  margin-bottom:10px;
+  cursor:pointer;
+}
+#moreDetail {
+  float: right; 
+  height:50px;
+  width :10%;
+  margin-top: 1%;
+  position: relative;
+  bottom: 20px;   /* distance from bottom */
+  right: 20px;    /* distance from right */
+  padding: 10px 20px;
+  background-color: #457B9D;
+  color: white;
+  font-size:21px;
+  border: none;
+  margin-right:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+  cursor:pointer;
+}
+#addbtn{
+  color: white;
+  background-color: #457B9D;
+  height:36px;
+  width :45px;
+  border:none;
+}
+
+#submitbtn:hover , #resetbtn:hover , #moreDetail:hover,#addbtn:hover{
+  background-color: #143245;
+}
+#show th,#show td{
+    padding:13px;
+}
+.hidecontent{
+    display : none;
+}
+.msg-container{
+    height :100vmin;
+    /* display : flex; */
+    align-items: center;
+    flex-direction: column;
+    gap : 4rem;
+}
+span{
+    color : red;
+}
+#heading2{
+  padding : 30px;
+  font-size: 50px;
+  color:#143245;
+}
+.validation{
+  color:red;
+  font-size:15px;
+}
